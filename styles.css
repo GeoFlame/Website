@@ -1,0 +1,206 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #00725b;
+  text-align: center;
+  padding: 8px;
+}
+
+tr {
+  background-color: #00ffcc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  overflow: visible;
+  background: #0096e6;
+  text-align: center;
+
+  min-height: auto; /*80px*/
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  padding: 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+
+
+.brandbox {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+  max-width: max-content;
+  
+  flex: 0 0 auto;
+}
+
+
+
+.brandbox img {
+  width: 64px;
+  height: auto;
+  margin-right: 10px;
+  padding: 5px;
+  aspect-ratio: 1;
+  object-fit: scale-down;
+  transition: transform 0.2s ease;
+  
+  image-rendering: pixelated;
+
+}
+
+.brandbox img:hover {
+  transform: scale(1.1);
+}
+
+.brandbox h1 {
+  float: right;
+  text-align: left;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.navlinks {
+  overflow: auto;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.25); /*015f87, 5500ff, 0044ff, 2200ff*/
+  display: flex;
+  align-items: left;
+  /*border-radius: 5px;*/
+
+  flex-wrap: nowrap;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.navlinks a {
+  transition: transform 0.15s ease, background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  transform-origin: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 15px;
+
+  flex-shrink: 0;
+  flex: 0 0 auto;
+}
+
+.navlinks a:hover {
+  background-color: #83d8ff; /*3e3e3e*/
+  color: #004c73; /*00b3ff*/
+  transform: scale(0.95);
+}
+
+.content {
+  flex: 1;
+  padding: 50px;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.contentbox {
+  flex: 1;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+body {
+  background-image: url('images/Background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Make sure footer sticks to bottom if content is short */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* 🔥 Footer Styles 🔥 */
+.footer {
+  background: #0096e6;
+  text-align: center;
+  padding: 25px 40px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.footer-left h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+h1 {
+  color: rgb(0, 0, 0);
+}
+p {
+  color: rgb(0, 0, 0);
+}
